@@ -289,8 +289,6 @@ class ApplicationController < ActionController::Base
       puts   "bla"
     elsif false
       puts   "bla"
-    elsif false
-      puts   "bla"
     end
   end
 end
