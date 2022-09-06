@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
 module Api
-  class AuthorsController < ApplicationController
+  class AuthorsController = ApplicationController
     before_action :set_author, only: %i[show update destroy]
     def index
+
       render json: Author.all
+
+
+
     end
 
     def show
@@ -38,5 +42,4 @@ module Api
     def author_params
       params.require(:author).permit(%i[name last_name avatar])
     end
-  end
-end
+
