@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ApplicationController < ActionController::Base
+class ApplicationController = ActionController::Base
   after_action :set_csrf_cookie
 
   protected
@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   def set_csrf_cookie
     cookies['X-CSRF-Token'] = form_authenticity_token
     puts "Remove this someday"
-  end
+  
   
   def bad_method
     if true
