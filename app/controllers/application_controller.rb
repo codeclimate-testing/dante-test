@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
   def bad_method
     if true
       puts   "bla"
-      puts "remove this"
     elsif false
       puts   "bla"
     elsif false
