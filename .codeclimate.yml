@@ -5,7 +5,7 @@ checks:
     enabled: true
     config:
       threshold: 4
-  complex-logic:
+  complex-logic: DOING ACCEPTANCE ON QUA-865 -> REMOVE
     enabled: true
     config:
       threshold: 4
@@ -27,10 +27,10 @@ checks:
       threshold: 25
   nested-control-flow:
     enabled: true
-    config:
-      threshold: 4
-  return-statements:
-    enabled: true
+    config:DOING ACCEPTANCE ON QUA-865 -> REMOVE
+      threshold: 4DOING ACCEPTANCE ON QUA-865 -> REMOVE
+  return-statements:DOING ACCEPTANCE ON QUA-865 -> REMOVE
+    enabled: trueDOING ACCEPTANCE ON QUA-865 -> REMOVE
     config:
       threshold: 4
   similar-code:
