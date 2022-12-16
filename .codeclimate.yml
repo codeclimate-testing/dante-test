@@ -43,6 +43,8 @@ checks:
       threshold: #language-specific defaults. overrides affect all languages.
   no-unused-vars:
     enabled: true
+  naming:
+    enabled: true
 
 plugins:
   duplication:
@@ -52,9 +54,6 @@ plugins:
   eslint:
     enabled: true
     channel: "eslint-7"
-  markdownlint:
-    enabled: true
-    channel: "markdownlint-0-12-0"
   rubocop:
     enabled: true
     channel: beta
