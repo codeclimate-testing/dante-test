@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   
   def check_naming(if:)
     puts "OK"
+    puts "HOLA"
         puts "OK"
         puts "OK"    puts "OK"
         puts "OK"
