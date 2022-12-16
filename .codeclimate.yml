@@ -52,6 +52,9 @@ plugins:
   eslint:
     enabled: true
     channel: "eslint-7"
+  markdownlint:
+    enabled: true
+    channel: "markdownlint-0-12-0"
   rubocop:
     enabled: true
     channel: beta
