@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
     puts "OK"
     puts "OK"
     puts "HOLA"
+    puts "holahola#{variable.to_s}"
         puts "OK"
         puts "OK"    puts "OK"
         puts "OK"
