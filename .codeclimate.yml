@@ -62,6 +62,10 @@ plugins:
     channel: "rubocop-1-31-0"
     issue_override:
       severity: critical
+  flog:
+    enabled: true
+    config:
+      score_threshold: 20.0
 
 exclude_patterns:
 - "config/"
