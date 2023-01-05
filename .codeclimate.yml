@@ -48,9 +48,9 @@ checks:
 
 plugins:
   duplication:
-    enabled: false
+    enabled: true
   structure:
-    enabled: false
+    enabled: true
   eslint:
     enabled: true
     channel: "eslint-7"
