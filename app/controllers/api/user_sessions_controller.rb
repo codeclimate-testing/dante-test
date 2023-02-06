@@ -10,6 +10,106 @@ module Api
 
       return render json: @user, status: :created if @user
 
+      unless @user
+        if "test"
+          if "test2"
+            unless @user
+              if "test"
+                if "test2"
+                  "result"
+                else
+                  "result2"
+                end
+              elsif "test3"
+                if "test4"
+                  "result3"
+                else
+                  "result4"
+                end
+              end
+            end
+          else
+            unless @user
+              if "test"
+                if "test2"
+                  "result"
+                else
+                  "result2"
+                end
+              elsif "test3"
+                if "test4"
+                  "result3"
+                else
+                  "result4"
+                end
+              end
+            end
+          end
+        elsif "test3"
+          if "test4"
+            unless @user
+              if "test"
+                if "test2"
+                  "result"
+                else
+                  unless @user
+                    if "test"
+                      if "test2"
+                        "result"
+                      else
+                        "result2"
+                      end
+                    elsif "test3"
+                      if "test4"
+                        "result3"
+                      else
+                        "result4"
+                      end
+                    end
+                  end
+                end
+              elsif "test3"
+                if "test4"
+                  unless @user
+                    if "test"
+                      if "test2"
+                        "result"
+                      else
+                        "result2"
+                      end
+                    elsif "test3"
+                      if "test4"
+                        "result3"
+                      else
+                        "result4"
+                      end
+                    end
+                  end
+                else
+                  "result4"
+                end
+              end
+            end
+          else
+            unless @user
+              if "test"
+                if "test2"
+                  "result"
+                else
+                  "result2"
+                end
+              elsif "test3"
+                if "test4"
+                  "result3"
+                else
+                  "result4"
+                end
+              end
+            end
+          end
+        end
+      end
+
       render json: { error: 'Login failed' }, status: :unprocessable_entity
     end
 
