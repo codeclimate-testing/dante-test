@@ -67,6 +67,8 @@ plugins:
     channel: beta
     config:
       score_threshold: 1.0
+  brakeman:
+    enabled: true
 
 exclude_patterns:
 - "config/"
