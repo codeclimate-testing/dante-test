@@ -53,7 +53,7 @@ plugins:
     enabled: true
   eslint:
     enabled: true
-    channel: "beta"
+    channel: "eslint-8"
   markdownlint:
     enabled: true
     channel: "beta"
