@@ -59,7 +59,7 @@ plugins:
     channel: "beta"
   rubocop:
     enabled: true
-    channel: "beta"
+    channel: "rubocop-1-39-0"
     issue_override:
       severity: critical
   flog:
