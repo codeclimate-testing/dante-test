@@ -64,7 +64,7 @@ plugins:
       severity: critical
   flog:
     enabled: true
-    channel: beta
+    channel: flog-4-6-6
     config:
       score_threshold: 1.0
   brakeman:
