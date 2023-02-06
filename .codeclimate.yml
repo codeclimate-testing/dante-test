@@ -64,6 +64,7 @@ plugins:
       severity: critical
   flog:
     enabled: true
+    channel: beta
     config:
       score_threshold: 1.0
 
