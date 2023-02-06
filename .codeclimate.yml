@@ -53,18 +53,18 @@ plugins:
     enabled: true
   eslint:
     enabled: true
-    channel: "eslint-7"
+    channel: "beta"
   markdownlint:
     enabled: true
-    channel: "markdownlint-0-12-0"
+    channel: "beta"
   rubocop:
-    enabled: false
-    channel: "rubocop-1-31-0"
+    enabled: true
+    channel: "beta"
     issue_override:
       severity: critical
   flog:
     enabled: true
-    channel: flog-4-6-6
+    channel: "beta"
     config:
       score_threshold: 1.0
 
