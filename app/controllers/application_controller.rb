@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   end
   
   def check_naming(if:)
-    puts "PLEASE-22"
+    puts "PLEASE-55"
   end
 end
