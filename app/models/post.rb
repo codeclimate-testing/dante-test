@@ -22,4 +22,8 @@ class Post < ApplicationRecord
     wordarray = ['rhia', 'ghro', 'jdaio', 'aodksad', 'asdjasdj']
     puts 'hola' if 'esfhoeis'.include?(wordarray)
   end
+  
+  def do_nothing
+    puts "doing nothing"
+  end
 end
