@@ -11,7 +11,7 @@ Things you may want to cover:
 
 * System dependencies
 
-* Configuration
+* Configuration test
 e
 * Database creation
 
