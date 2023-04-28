@@ -33,6 +33,7 @@ jobs:
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load --trace
+      - run: echo $CC_TEST_REPORTER_ID
       - run:
           name: Setup Code Climate test-reporter
           command: |
@@ -42,5 +43,5 @@ jobs:
           name: Run tests
           command: |
             ./cc-test-reporter before-build
-            bundle exec rspec spec -fd
+            bundle exec rspec spec
             ./cc-test-reporter after-build
