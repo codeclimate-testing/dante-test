@@ -19,9 +19,13 @@ class User < ApplicationRecord
     puts "something"
   end
 
-  def new_method
-    this_is_a_new_method = true
+  def cool?
+    cool_user = false
 
-    true
+    if followers.count > 5
+      cool_user = true
+    end
+
+    cool_user
   end
 end
