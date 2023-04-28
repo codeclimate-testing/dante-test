@@ -14,4 +14,8 @@ class User < ApplicationRecord
 
   has_many :user_following, foreign_key: :follower_id, class_name: 'UserFollower'
   has_many :following, through: :user_following
+  
+  def something
+    puts "something"
+  end
 end
