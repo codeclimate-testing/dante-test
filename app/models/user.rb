@@ -18,4 +18,10 @@ class User < ApplicationRecord
   def something
     puts "something"
   end
+
+  def new_method
+    this_is_a_new_method = true
+
+    true
+  end
 end
