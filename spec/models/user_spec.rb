@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
   describe "#cool?" do
     context "when user has more than 5 followers" do
       before do
-        5.times do
+        6.times do
           new_user = create(:user)
           user.followers << new_user
           user.save!
