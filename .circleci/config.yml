@@ -7,7 +7,7 @@ jobs:
       - image: cimg/ruby:2.7.1-node
         environment:
           RAILS_ENV: test
-          CC_TEST_REPORTER_ID: 0181459f0ae200c5a76aa038701d6c62ada642875581090f5429c3b96c7f6ff4
+          CC_TEST_REPORTER_ID: 89c60b9a9067bbe68d4f2c558bd44191a4c41974162cc917b95489ebae16bed3
           PGHOST: 127.0.0.1
           DATABASE_URL: postgres://postgres@127.0.0.1:5432/wbooks-api_test
       - image: circleci/postgres:9.5-alpine
