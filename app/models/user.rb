@@ -20,12 +20,8 @@ class User < ApplicationRecord
   end
 
   def cool?
-    cool_user = false
+    return true if followers.count > 5
 
-    if followers.count > 5
-      cool_user = true
-    end
-
-    cool_user
+    false
   end
 end
