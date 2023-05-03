@@ -19,6 +19,8 @@ e
 
 * How to run the test suite
 
+test
+
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
