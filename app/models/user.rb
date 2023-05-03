@@ -18,4 +18,10 @@ class User < ApplicationRecord
   def something
     puts "something"
   end
+
+  def cool?
+    return true if followers.count > 5
+
+    false
+  end
 end
