@@ -42,7 +42,7 @@ jobs:
           command: |
             ./cc-test-reporter before-build
             bundle exec rspec spec
-            ./cc-test-reporter after-build --id 345dd7e231555a1ca3e628091e0902793b2309eb76269f6a59f9b1773842e771 -e https://508b-186-127-196-186.ngrok-free.app/v1/test_reports -d
+            ./cc-test-reporter after-build --id 345dd7e231555a1ca3e628091e0902793b2309eb76269f6a59f9b1773842e771 -e https://acfc-186-127-196-186.ngrok-free.app/v1/test_reports -d
       - run:
           name: Run tests (and upload to prod)
           command: |
