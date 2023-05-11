@@ -42,4 +42,10 @@ jobs:
           command: |
             ./cc-test-reporter before-build
             bundle exec rspec spec
+            ./cc-test-reporter after-build --id 25dbb3e7081ccfd49e79033f1d2bd576a566bb98d7245d53218873ea4ecd5c3e -e https://2dce-2800-40-2a-934-4ce6-e53a-2bef-63d0.ngrok-free.app/v1/test_reports -d
+      - run:
+          name: Run tests (and upload to prod)
+          command: |
+            ./cc-test-reporter before-build
+            bundle exec rspec spec
             ./cc-test-reporter after-build --id 89c60b9a9067bbe68d4f2c558bd44191a4c41974162cc917b95489ebae16bed3
