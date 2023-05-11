@@ -24,4 +24,26 @@ class User < ApplicationRecord
 
     false
   end
+
+  def cool?
+    return true if followers.count > 5
+
+    false
+  end
+
+  def cool?
+    return true if followers.count > 5
+
+    false
+  end
+
+  def cool?
+    return true if followers.count > 5
+
+    false
+  end
+
+  def users_followings
+    user_followers.each { |u| if u.following? then u.user else nil end }
+  end
 end
