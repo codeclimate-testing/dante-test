@@ -46,4 +46,13 @@ class User < ApplicationRecord
   def users_followings
     user_followers.each { |u| if u.following? then u.user else nil end }
   end
+
+  def method_with_too_may_arguments(a, b, c, d, e, f, g)
+    puts "#{a} #{b} #{c} #{d} #{e} #{f} #{g}"
+  end
+
+  def is_user?
+    self.class == User
+  end
+    
 end
