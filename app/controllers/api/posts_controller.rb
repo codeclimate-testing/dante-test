@@ -7,6 +7,7 @@ module Api
       render json: Post.joins(:author).order(created_at: 'desc').page(params[:page])
     end
 
+    # The show action 
     def show
       render json: @post
     end
