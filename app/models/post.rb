@@ -28,6 +28,6 @@ class Post < ApplicationRecord
   end
 
   def do_something
-    puts 'doing something'
+    puts "doing something"
   end
 end
