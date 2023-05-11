@@ -54,5 +54,9 @@ class User < ApplicationRecord
   def is_user?
     self.class == User
   end
-    
+
+  def set_name
+    self.name = "name"
+    self.save
+  end
 end
