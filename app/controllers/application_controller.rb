@@ -15,5 +15,6 @@ class ApplicationController < ActionController::Base
 
   def work
     puts 'work!'
+    puts 'work more!'
   end
 end
