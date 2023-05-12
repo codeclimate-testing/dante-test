@@ -30,12 +30,4 @@ class Post < ApplicationRecord
   def do_something
     puts 'doing something'
   end
-
-  def noooo
-    puts "noooo"
-  end
-
-  def aaaaa
-    "aaaaa"
-  end
 end
