@@ -49,3 +49,4 @@ jobs:
             ./cc-test-reporter before-build
             bundle exec rspec spec
             ./cc-test-reporter after-build --id 89c60b9a9067bbe68d4f2c558bd44191a4c41974162cc917b95489ebae16bed3
+
