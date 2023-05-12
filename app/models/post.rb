@@ -34,4 +34,8 @@ class Post < ApplicationRecord
   def noooo
     puts "noooo"
   end
+
+  def aaaaa
+    "aaaaa"
+  end
 end
