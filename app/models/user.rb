@@ -24,4 +24,8 @@ class User < ApplicationRecord
 
     false
   end
+
+  def old?
+    created_at? < 1.year.ago
+  end
 end
