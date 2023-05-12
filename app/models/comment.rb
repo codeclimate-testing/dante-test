@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Comment
 class Comment < ApplicationRecord
   belongs_to :author, class_name: 'User', foreign_key: :user_id
   belongs_to :post
@@ -8,4 +9,8 @@ class Comment < ApplicationRecord
 
   alias_attribute :author_id, :user_id
   alias_attribute :user, :author
+
+  def scream
+    body.upcase
+  end
 end

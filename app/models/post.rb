@@ -30,4 +30,8 @@ class Post < ApplicationRecord
   def do_something
     puts 'doing something'
   end
+
+  def do_everything
+    puts 'doing everything'
+  end
 end

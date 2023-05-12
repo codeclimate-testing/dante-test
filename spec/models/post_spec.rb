@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   let!(:user) { create(:user) }
+  let(:post) { create(:post) }
   context '#create' do
     it { expect(build(:post)).to be_valid }
     context 'without author' do
@@ -17,6 +18,12 @@ RSpec.describe Post, type: :model do
       subject { build(:post, body: Faker::Lorem.paragraph_by_chars(number: 150)) }
 
       it { expect(subject).to_not be_valid }
+    end
+  end
+
+  describe "#do_everything" do
+    it "does everything" do
+      post.do_everything
     end
   end
 end

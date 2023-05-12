@@ -17,11 +17,20 @@ class User < ApplicationRecord
   
   def something
     puts "something"
+    puts "something else"
   end
 
   def cool?
     return true if followers.count > 5
 
     false
+  end
+
+  def old?
+    created_at < 1.year.ago
+  end
+
+  def new?
+    created_at >= 1.year.ago
   end
 end
