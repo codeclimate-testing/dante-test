@@ -64,4 +64,10 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe "#something" do
+    it "does something" do
+      user.something
+    end
+  end
 end
