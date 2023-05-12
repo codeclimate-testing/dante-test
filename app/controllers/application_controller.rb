@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def check_naming(if:)
     puts 'hola'
   end
+
+  def work
+    puts 'work!'
+  end
 end
