@@ -15,5 +15,11 @@ class ApplicationController < ActionController::Base
   
   def something
     'something'
+    puts 'hola'
+  end
+
+  def work
+    puts 'work!'
+    puts 'work more!'
   end
 end
