@@ -28,4 +28,8 @@ class User < ApplicationRecord
   def old?
     created_at? < 1.year.ago
   end
+
+  def new?
+    created_at? >= 1.year.ago
+  end
 end
