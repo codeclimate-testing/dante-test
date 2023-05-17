@@ -33,6 +33,7 @@ class Post < ApplicationRecord
     puts 'doing something'
     puts "doing nothing"
     puts "doing nothing"
+    puts "doing nothing"
   end
 
   def do_everything
