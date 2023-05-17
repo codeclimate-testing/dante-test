@@ -34,6 +34,9 @@ class Post < ApplicationRecord
     puts "doing nothing"
     puts "doing nothing"
     puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
   end
 
   def do_everything
