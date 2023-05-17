@@ -34,4 +34,8 @@ class Post < ApplicationRecord
   def do_everything
     puts 'doing everything'
   end
+
+  def scream
+    body.upcase
+  end
 end
