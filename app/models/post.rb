@@ -25,10 +25,30 @@ class Post < ApplicationRecord
   
   def do_nothing
     puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
   end
 
   def do_something
     puts 'doing something'
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
+    puts "doing nothing"
   end
 
   def do_everything
