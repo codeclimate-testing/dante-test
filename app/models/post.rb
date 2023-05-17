@@ -25,6 +25,7 @@ class Post < ApplicationRecord
   
   def do_nothing
     puts "doing nothing"
+    puts "doing nothing"
   end
 
   def do_something
@@ -33,9 +34,5 @@ class Post < ApplicationRecord
 
   def do_everything
     puts 'doing everything'
-  end
-
-  def scream
-    body.upcase
   end
 end
