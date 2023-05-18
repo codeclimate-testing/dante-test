@@ -24,7 +24,11 @@ class Post < ApplicationRecord
   end
   
   def do_nothing
-    puts 'doing nothing'
+    if true
+      puts "this is covered"
+    else
+      puts "this is not covered"
+    end
   end
 
   def do_something
