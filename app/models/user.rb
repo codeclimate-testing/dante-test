@@ -34,6 +34,7 @@ class User < ApplicationRecord
   end
 
   def method_a
-    "method_a"
+    puts 'method_a'
+    puts 'method_b'
   end
 end
