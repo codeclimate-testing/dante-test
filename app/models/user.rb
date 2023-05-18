@@ -33,4 +33,8 @@ class User < ApplicationRecord
   def new?
     created_at >= 1.year.ago
   end
+
+  def method_a
+    "method_a"
+  end
 end

@@ -42,5 +42,5 @@ jobs:
           command: |
             ./cc-test-reporter before-build
             bundle exec rspec spec
-            ./cc-test-reporter after-build --id dac291d091210d6b4ba61e515413252ac35567133cfca27d70280933f48138ac -e https://302e-2800-40-2a-934-812d-25bb-78a9-5a8d.ngrok-free.app/v1/test_reports -d
+            ./cc-test-reporter after-build --id dac291d091210d6b4ba61e515413252ac35567133cfca27d70280933f48138ac -e https://f426-2800-40-2a-934-585f-4a36-1d8b-3068.ngrok-free.app/v1/test_reports -d
 
