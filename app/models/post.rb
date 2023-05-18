@@ -32,8 +32,6 @@ class Post < ApplicationRecord
     else
       puts 'this is not covered'
       puts 'this is not covered'
-      puts 'this is not covered'
-      puts 'this is not covered'
     end
   end
 
