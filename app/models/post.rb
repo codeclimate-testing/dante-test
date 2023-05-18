@@ -25,7 +25,6 @@ class Post < ApplicationRecord
   
   def do_nothing
     puts 'doing nothing'
-    puts 'doing nothing'
   end
 
   def do_something
