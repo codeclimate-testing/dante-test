@@ -17,7 +17,6 @@ class User < ApplicationRecord
   
   def something
     puts "something"
-    puts "something else"
   end
 
   def cool?
