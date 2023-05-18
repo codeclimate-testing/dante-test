@@ -33,6 +33,7 @@ class Post < ApplicationRecord
       'this is covered'
       'this is covered'
       'this is covered'
+      'this is covered'
     else
       'this is not covered'
       'this is not covered'
