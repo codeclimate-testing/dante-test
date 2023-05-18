@@ -9,6 +9,11 @@ jobs:
           RAILS_ENV: test
           PGHOST: 127.0.0.1
           DATABASE_URL: postgres://postgres@127.0.0.1:5432/wbooks-api_test
+      - image: circleci/postgres:9.5-alpine
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: react_rails_start_test
+          POSTGRES_PASSWORD: postgres
     executor: ruby/default
     steps:
       - checkout
