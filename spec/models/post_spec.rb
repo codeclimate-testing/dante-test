@@ -26,4 +26,10 @@ RSpec.describe Post, type: :model do
       post.do_everything
     end
   end
+
+  describe "#do_something" do
+    it "does something" do
+      post.do_something
+    end
+  end
 end
