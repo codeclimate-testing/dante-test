@@ -32,4 +32,10 @@ RSpec.describe Post, type: :model do
       post.do_something
     end
   end
+
+  describe "#do_nothing" do
+    it "does nothing" do
+      post.do_nothing
+    end
+  end
 end
