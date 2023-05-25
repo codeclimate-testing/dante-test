@@ -16,7 +16,7 @@ class User < ApplicationRecord
   has_many :following, through: :user_following
   
   def something
-    puts "something"
+    puts "something else"
   end
 
   def cool?
