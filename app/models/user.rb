@@ -17,7 +17,6 @@ class User < ApplicationRecord
   
   def something
     puts "something"
-    puts "something else"
   end
 
   def cool?
@@ -32,5 +31,9 @@ class User < ApplicationRecord
 
   def new?
     created_at >= 1.year.ago
+  end
+
+  def method_a
+    puts 'method_a'
   end
 end
