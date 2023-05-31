@@ -13,4 +13,8 @@ class Comment < ApplicationRecord
   def scream
     body.upcase
   end
+  
+  def suspicious
+    body + "..."
+  end
 end
