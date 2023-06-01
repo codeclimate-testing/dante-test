@@ -22,4 +22,8 @@ class ApplicationController < ActionController::Base
     puts 'work!'
     puts 'work more!'
   end
+  
+  def dont_work
+    raise StandardError, "this doesnt work"
+  end
 end
