@@ -37,14 +37,14 @@ jobs:
           command: |
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
+      # - run:
+      #     name: Run tests (and upload to local)
+      #     command: |
+      #       ./cc-test-reporter before-build
+      #       bundle exec rspec spec
+      #       ./cc-test-reporter after-build --id c6ed678f1f910a0b6994fd49abdb3dafaf9e27de89b8991c6815ad4c03c4581d -t simplecov -e https://1f9a-2800-40-2a-934-4864-1507-cd26-27ff.ngrok-free.app/v1/test_reports -d
       - run:
-          name: Run tests (and upload to local)
-          command: |
-            ./cc-test-reporter before-build
-            bundle exec rspec spec
-            ./cc-test-reporter after-build --id c6ed678f1f910a0b6994fd49abdb3dafaf9e27de89b8991c6815ad4c03c4581d -t simplecov -e https://1f9a-2800-40-2a-934-4864-1507-cd26-27ff.ngrok-free.app/v1/test_reports -d
-      - run:
-          name: Run tests (and upload to local)
+          name: Run tests (and upload to prod)
           command: |
             ./cc-test-reporter before-build
             bundle exec rspec spec
