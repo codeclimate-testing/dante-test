@@ -37,16 +37,18 @@ jobs:
           command: |
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
+      # - run:
+      #     name: Run tests (and upload to local)
+      #     command: |
+      #       ./cc-test-reporter before-build
+      #       bundle exec rspec spec
+      #       ./cc-test-reporter after-build --id c6ed678f1f910a0b6994fd49abdb3dafaf9e27de89b8991c6815ad4c03c4581d -t simplecov -e https://1f9a-2800-40-2a-934-4864-1507-cd26-27ff.ngrok-free.app/v1/test_reports -d
       - run:
-          name: Run tests (and upload to local)
+          name: Run tests (and upload to prod)
+          environment:
+            CC_TEST_REPORTER_ID: c64c2d6e69db427894f6ba6260b267b9f37a34663116d36b6b4f1735051c27fc
           command: |
             ./cc-test-reporter before-build
             bundle exec rspec spec
-            ./cc-test-reporter after-build --id c6ed678f1f910a0b6994fd49abdb3dafaf9e27de89b8991c6815ad4c03c4581d -e https://1f9a-2800-40-2a-934-4864-1507-cd26-27ff.ngrok-free.app/v1/test_reports -d
-      - run:
-          name: Run tests (and upload to local)
-          command: |
-            ./cc-test-reporter before-build
-            bundle exec rspec spec
-            ./cc-test-reporter after-build --id c64c2d6e69db427894f6ba6260b267b9f37a34663116d36b6b4f1735051c27fc
+            ./cc-test-reporter after-build --id c64c2d6e69db427894f6ba6260b267b9f37a34663116d36b6b4f1735051c27fc -t simplecov
 
